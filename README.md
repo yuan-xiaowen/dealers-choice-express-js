@@ -10,6 +10,7 @@
 - create an express application which displays data stored in a javascript array
   - with a listing route
   - and a detail route
+  - and the ability to get from the detail route back to the listing route
 
 
 <img src='https://github.com/FullstackAcademy/dealers-choice-express-js/blob/main/Screen%20Shot%202022-05-06%20at%207.48.12%20AM.png' />
