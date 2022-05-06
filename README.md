@@ -11,4 +11,7 @@
   - with a listing route
   - and a detail route
 
+
+<img src='https://github.com/FullstackAcademy/dealers-choice-express-js/blob/main/Screen%20Shot%202022-05-06%20at%207.48.12%20AM.png' />
+
 - feel free to use a static route for any css files
