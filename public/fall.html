@@ -1,0 +1,89 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      <header> 24 SOLAR TERMS</header> 
+      <div id="fall">
+         <h1>A U T U M N</h1>
+         <div>
+           <div>
+              <div>
+                 <img src="fall1.jpg">
+                  <b></b>
+              </div>
+              <p>The Beginning of Autumn</p>
+              </div>
+              <div>
+                <div>
+                  <img src="fall2.jpg">
+                  <b></b>
+                </div>
+                <p>The End of Heat</p>
+              </div>
+              <div>
+                <div>
+                  <img src="fall3.jpg">
+                  <b></b>
+                </div>
+                <p>White Dew</p>
+              </div>
+              <div>
+                <div>
+                  <img src="fall4.jpg">
+                  <b></b>
+                </div>
+                <p>The Autumn Equinox</p>
+              </div>
+              <div>
+                <div>
+                  <img src="fall5.jpg">
+                  <b></b>
+                </div>
+                <p>Cold Dew</p>
+              </div>
+              <div>
+                <div>
+                  <img src="fall6.jpg">
+                  <b></b>
+                </div>
+                <p>Frosts Descent</p>
+              </div>
+            </div>
+          </div>  
+     </div> 
+     <div><a href='./'>back</a></div>
+
+  </body>
+  <script>
+    fall.addEventListener('click',function(event){
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Beginning of Autumn' ){
+        event.target.nextElementSibling.innerHTML='When the summer is gone, the leaves fall and the autumn is known. The cicadas are sad and the grain is ripe.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The End of Heat' ){
+        event.target.nextElementSibling.innerHTML='The autumn rain is cold, the granary is full of grain, the autumn is high and crisp, and the world is thundering.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='White Dew' ){
+        event.target.nextElementSibling.innerHTML='The cool wind comes, the white dew falls, the cold cicadas chirp and the wild geese return, just when the citrus is plump.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Autumn Equinox' ){
+        event.target.nextElementSibling.innerHTML='The autumnal equinox is dedicated to the moon, day and night are long, the water is dry, the field is cracked, and the osmanthus fragrance.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Cold Dew' ){
+        event.target.nextElementSibling.innerHTML='Curling up cool breeze, drinking chrysanthemum, wine, night cool as water, grass Wutong yellow.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Frosts Descent' ){
+        event.target.nextElementSibling.innerHTML='The weather is getting colder, the dew is freezing, the red persimmon is sweet and soft, and the maple leaves are like fire.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='B'){
+        event.target.classList.add('hide')
+    }   
+})
+  </script>
+</html>

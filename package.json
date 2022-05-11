@@ -1,0 +1,23 @@
+{
+  "name": "dealers-choice-express",
+  "version": "1.0.0",
+  "description": "- pick a topic you are interested in.   - sports   - entertainment   - cooking   - coding   - hobbies   - or anything else you are interested in! - create an express application which displays data stored in a javascript array   - with a listing route   - and a detail route   - and the ability to get from the detail route back to the listing route",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yuan-xiaowen/dealers-choice-express-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yuan-xiaowen/dealers-choice-express-js/issues"
+  },
+  "homepage": "https://github.com/yuan-xiaowen/dealers-choice-express-js#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "morgan": "^1.10.0"
+  }
+}

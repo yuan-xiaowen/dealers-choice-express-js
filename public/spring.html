@@ -1,0 +1,91 @@
+<html>
+
+  <head>
+      <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+      <header> 24 SOLAR TERMS</header>
+      <div id="spring">
+        <h1>S P R I N G</h1>
+        <div>
+          <div>
+            <div>
+              <img src="spring1.jpg" >
+              <b></b>
+            </div>
+            <p >The Beginning of Spring</p>
+          </div>
+          <div>
+            <div>
+              <img src="spring2.jpg">
+              <b></b>
+            </div>
+            <p>Rain Water</p>
+          </div>
+          <div>
+            <div>
+              <img src="spring3.jpg">
+              <b></b>
+            </div>
+            <p>The Waking of Insects</p>
+          </div>
+          <div>
+            <div>
+              <img src="spring4.jpg">
+              <b></b>
+            </div>
+            <p>The Spring Equinox</p>
+          </div>
+          <div>
+            <div>
+              <img src="spring5.jpg">
+              <b></b>
+            </div>
+            <p>Pure Brightness</p>
+          </div>
+          <div>
+            <div>
+              <img src="spring6.jpg">
+              <b></b>
+            </div>
+            <p>Grain Rain</p>
+          </div>
+        </div>
+      </div>                       
+    </div>
+    <ul><a href='./'>back</a></ul>
+  </body>
+  <script>
+    const spring=document.getElementById('spring')
+spring.addEventListener('click',function(event){
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Beginning of Spring' ){
+        event.target.nextElementSibling.innerHTML='Everything recovers, cultivates and sows, sings warblers and dances swallows, green buds sprout, and stingers begin to vibrate Yang.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Rain Water' ){
+        event.target.nextElementSibling.innerHTML='Its drizzling, the day is getting warmer, and the rain is sending fertilizer and busy one after another.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Waking of Insects' ){
+        event.target.nextElementSibling.innerHTML='Spring thunder rings, everything grows, a thunderbolt wakes up snakes and insects, the weather warms up and rain falls.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Spring Equinox' ){
+        event.target.nextElementSibling.innerHTML='The courtyard is a little deep. Willows and willows brush the heart. The day and night are divided equally, and the swallows return in spring.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Pure Brightness' ){
+        event.target.nextElementSibling.innerHTML='Drizzle in succession, spring tea is fragrant, tomb sweeping and ancestor worship, spring outing, afforestation and willow evergreen.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Grain Rain' ){
+        event.target.nextElementSibling.innerHTML='Rain begets a hundred valleys, rain breaks frost, pray for disaster elimination and sacrifice Cangjie'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='B'){
+        event.target.classList.add('hide')
+    }
+})
+  </script>
+</html>

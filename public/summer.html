@@ -1,0 +1,89 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      <header> 24 SOLAR TERMS</header>
+      <div id="summer">
+        <h1>S U M M E R</h1>
+        <div>
+          <div>
+            <div>
+              <img src="summer1.jpg">
+              <b></b>
+            </div>
+            <p>The Beginning of Summer</p>
+          </div>
+          <div>
+            <div>
+              <img src="summer2.jpg">
+              <b></b>
+            </div>
+            <p>Lesser Fullness of Grain</p>
+          </div>
+          <div>
+            <div>
+              <img src="summer3.jpg">
+              <b></b>
+            </div>
+            <p>Grain in Beard</p>
+          </div>
+          <div>
+            <div>
+              <img src="summer4.jpg">
+              <b></b>
+            </div>
+            <p>The Summer Solstice</p>
+          </div>
+          <div>
+            <div>
+              <img src="summer5.jpg">
+              <b></b>
+            </div>
+            <p>Lesser Heat</p>
+          </div>
+          <div>
+            <div>
+              <img src="summer6.jpg">
+              <b></b>
+            </div>
+            <p>Greater Heat</p>
+          </div>
+        </div>
+    </div>
+    </div>
+    <ul><a href='./'>back</a></ul>
+  </body>
+  <script>
+    const summer=document.getElementById('summer')
+summer.addEventListener('click',function(event){
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Beginning of Summer' ){
+        event.target.nextElementSibling.innerHTML='Mole crows, earthworms come out, and wild vegetables grow day by day'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Lesser Fullness of Grain' ){
+        event.target.nextElementSibling.innerHTML='Birds with cherry blossoms smile at transplanting seedlings, and the ridge head wheat ears begin to fill.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Grain in Beard' ){
+        event.target.nextElementSibling.innerHTML='In grain in ear season, everything is busy, birds and fish sing, and plum rain rises up the pond'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Summer Solstice' ){
+        event.target.nextElementSibling.innerHTML='Antlers fall off, cicadas chirp endlessly, plum rain continues in the south of the Yangtze River, and Koi swim in the pond.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Lesser Heat' ){
+        event.target.nextElementSibling.innerHTML='Its hot and windy. Ice cream can relieve the summer heat. Pedestrians go out with umbrellas. Dumplings are used to appetize their appetites.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Greater Heat' ){
+        event.target.nextElementSibling.innerHTML='In dog days of high temperature and extreme heat, the lazy fan is cool, the pond is playing to avoid the heat, and the watermelon is delicious and sweet.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='B'){
+        event.target.classList.add('hide')
+    }  
+})
+  </script>
+</html>

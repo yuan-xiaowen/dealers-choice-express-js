@@ -1,0 +1,90 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="main.css">
+  </head>
+  <body>
+      <header> 24 SOLAR TERMS</header>
+      <div id="winter">
+        <h1>W I N T E R</h1>
+        <div>
+          <div>
+            <div>
+              <img src="winter1.jpg">
+              <b></b>
+            </div>
+            <p>The Beginning of Winter</p>
+          </div>
+          <div>
+            <div>
+              <img src="winter2.jpg">
+              <b></b>
+            </div>
+            <p>Lesser Snow</p>
+          </div>
+          <div>
+            <div>
+              <img src="winter3.jpg">
+              <b></b>
+            </div>
+            <p>Greater Snow</p>
+          </div>
+          <div>
+            <div>
+              <img src="winter4.jpg">
+              <b></b>
+            </div>
+            <p>The Winter Solstice</p>
+          </div>
+          <div>
+            <div>
+            <img src="winter5.jpg">
+            <b></b>
+            </div>
+            <p>Lesser Cold</p>
+          </div>
+          <div>
+            <div>
+            <img src="winter6.jpg">
+            <b></b>
+            </div>
+            <p>Greater Cold</p>
+          </div>
+        </div>
+     </div>
+   </div>
+   <ul><a href='./'>back</a></ul>
+  </body>
+  <script>
+    const winter=document.getElementById('winter')
+winter.addEventListener('click',function(event){
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Beginning of Winter' ){
+        event.target.nextElementSibling.innerHTML='When the river water begins to condense, it is shocked by thunder in winter. All things are collected to avoid the cold.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Lesser Snow' ){
+        event.target.nextElementSibling.innerHTML='At the beginning of Taihang, snow fell and birds flew away from thousands of mountains. Farmers were busy storing vegetables to keep out the winter cold.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Greater Snow' ){
+        event.target.nextElementSibling.innerHTML='Thousands of miles of ice, thousands of miles of snow, cold weather, bacon incense.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='The Winter Solstice' ){
+        event.target.nextElementSibling.innerHTML='Blizzard low temperature, no business for thousands of tourists, south hot pot, North dumplings and Chimonanthus grandiflorum.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Lesser Cold' ){
+        event.target.nextElementSibling.innerHTML='Light cold and heavy cold, cold into ice, you close the snow, red stove warm.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='IMG' && event.target.parentElement.nextElementSibling.innerText==='Greater Cold' ){
+        event.target.nextElementSibling.innerHTML='Rain and snow, Laba fragrance, firecracker sound, strong annual flavor.'
+        event.target.nextElementSibling.classList.remove('hide')
+    }
+    if(event.target.tagName==='B'){
+        event.target.classList.add('hide')
+    } 
+})
+
+  </script>
+</html>
